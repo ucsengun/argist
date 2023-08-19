@@ -65,4 +65,3 @@ import utilities.MyMethods;
             return kayitOlButonu;
         }
     }
-}

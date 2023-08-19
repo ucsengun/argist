@@ -1,17 +1,50 @@
-Feature:
+Feature: Tüm Özellikler Sayfası
 
-  Scenario:
-    Given "https://www.argist.com/" websitesine eriş.
-    When sayfa üst sekmedeki topluluk butonuna tıkla.
-    And Romantik İlişkiler başlığı altındaki Katıl butonuna tıkla.
-    Then Açılan sayfanın evimdeki psikologlar websitesinin romantik ilişkiler topluluğu ödeme sayfasıyla ilgili sayfanın yüklendiğini kontrol et..
+  Scenario: Tüm Özellikler Sayfasında Yer Alan Satış Yönetimi Fonksiyonunun Doğrulanması
+    Given argist websitesine eriş.
+    When üst menüde yer alan tüm özellikler butonuna tıkla.
+    And açılan pencerede satış yönetimi özelliğini incele butonuna tıkla.
+    And hemen kayıt ol butonuna tıkla.
+    Then açılan sayfanın kayıt olma sayfası olduğunu kontrol et.
 
 
 
-  Scenario:
-    Given
-    When Üst menüde bulunan Profil logosuna tıkla.
-    And Kayıt Ol seçeneğine tıkla.
-    And Gelen formu doldururken tüm değerleri geçerli bir şekilde doldur.
-    And Üye ol butonuna tıkla.
-    Then Kontrol et.
+  Scenario: Tüm Özellikler Sayfasında Yer Alan Satış Yönetimi Fonksiyonunun Doğrulanması
+    Given argist websitesine eriş.
+    When üst menüde yer alan tüm özellikler butonuna tıkla.
+    And açılan pencerede randevu yönetimi özelliğini incele butonuna tıkla.
+    And hemen kayıt ol butonuna tıkla.
+    Then açılan sayfanın kayıt olma sayfası olduğunu kontrol et.
+
+
+  Scenario: Tüm Özellikler Sayfasında Yer Alan Satış Yönetimi Fonksiyonunun Doğrulanması
+    Given argist websitesine eriş.
+    When üst menüde yer alan tüm özellikler butonuna tıkla.
+    And açılan pencerede servis yönetimi özelliğini incele butonuna tıkla.
+    And hemen kayıt ol butonuna tıkla.
+    Then açılan sayfanın kayıt olma sayfası olduğunu kontrol et.
+
+
+  Scenario: Tüm Özellikler Sayfasında Yer Alan Satış Yönetimi Fonksiyonunun Doğrulanması
+    Given argist websitesine eriş.
+    When üst menüde yer alan tüm özellikler butonuna tıkla.
+    And açılan pencerede e-mağaza yönetimi özelliğini incele butonuna tıkla.
+    And hemen kayıt ol butonuna tıkla.
+    Then açılan sayfanın kayıt olma sayfası olduğunu kontrol et.
+
+
+
+  Scenario: Tüm Özellikler Sayfasında Yer Alan Satış Yönetimi Fonksiyonunun Doğrulanması
+    Given argist websitesine eriş.
+    When üst menüde yer alan tüm özellikler butonuna tıkla.
+    And açılan pencerede stok yönetimi özelliğini incele butonuna tıkla.
+    And hemen kayıt ol butonuna tıkla.
+    Then açılan sayfanın kayıt olma sayfası olduğunu kontrol et.
+
+
+  Scenario: Tüm Özellikler Sayfasında Yer Alan Satış Yönetimi Fonksiyonunun Doğrulanması
+    Given argist websitesine eriş.
+    When üst menüde yer alan tüm özellikler butonuna tıkla.
+    And açılan pencerede teklif yönetimi özelliğini incele butonuna tıkla.
+    And hemen kayıt ol butonuna tıkla.
+    Then açılan sayfanın kayıt olma sayfası olduğunu kontrol et.
