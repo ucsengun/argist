@@ -34,6 +34,9 @@ import utilities.MyMethods;
 
         @FindBy(xpath = "//a[@title='Hemen Kayıt Ol']")
         private WebElement kayitOlButonu;
+
+        @FindBy(xpath = "//button[@type='submit']")
+        private WebElement kayitOlSayfasiDogrulama;
         public WebElement getOzellikler() {
             return tumOzellikler;
         }
@@ -63,5 +66,9 @@ import utilities.MyMethods;
 
         public WebElement getKayitOlButonu(){
             return kayitOlButonu;
+        }
+
+        public WebElement getKayitOlSayfasiDogrulama(){
+            return kayitOlSayfasiDogrulama;
         }
     }
