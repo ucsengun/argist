@@ -4,15 +4,21 @@ import io.cucumber.java.en.And;
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
+import pages.argist_POM;
+import utilities.DriverClass;
 
 public class Argist_ {
+
+    argist_POM ar = new argist_POM();
     @Given("argist websitesine eriş.")
-    public void websitesineEriş(String arg0) {
+    public void websitesineEriş() {
+        DriverClass.getDriver().get("https://argist.com/");
+
     }
 
     @When("üst menüde yer alan tüm özellikler butonuna tıkla.")
     public void üstMenüdeYerAlanTümÖzelliklerButonunaTıkla() {
-        
+        ar.clickMethod(ar.getOzellikler());
     }
 
     @And("açılan pencerede satış yönetimi özelliğini incele butonuna tıkla.")

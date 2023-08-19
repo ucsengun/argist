@@ -12,8 +12,8 @@ import utilities.MyMethods;
             PageFactory.initElements(DriverClass.getDriver(), this);
         }
 
-        @FindBy(xpath = "//a[@title='Tüm Özelliklerini İncele']")
-        private WebElement ozellikler;
+        @FindBy(xpath = "//a[normalize-space()='Tüm Özellikler']")
+        private WebElement tumOzellikler;
 
         @FindBy(css= "a[title='Özelliği İncele'][href='https://argist.com/satis-yonetimi/']")
         private WebElement satisYonetimiOzelligi;
@@ -35,7 +35,7 @@ import utilities.MyMethods;
         @FindBy(xpath = "//a[@title='Hemen Kayıt Ol']")
         private WebElement kayitOlButonu;
         public WebElement getOzellikler() {
-            return ozellikler;
+            return tumOzellikler;
         }
 
         public WebElement getSatisYonetimiOzelligi() {
