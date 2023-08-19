@@ -37,6 +37,15 @@ import utilities.MyMethods;
 
         @FindBy(xpath = "//button[@type='submit']")
         private WebElement kayitOlSayfasiDogrulama;
+
+        @FindBy(xpath = "//a[@title='Ücretsiz, E-Mağazanı Aç']")
+        private WebElement ucretsizEmagazaniAc;
+
+        @FindBy(xpath = "//a[@title='Ücretsiz, Fiyat Teklifi Hazırla']")
+        private WebElement ucretsizFiyatTeklifi;
+
+        @FindBy(xpath = "//b[normalize-space()='Hemen Ücretsiz']")
+        private WebElement ucretsizEmagazaniAcDogrulama;
         public WebElement getOzellikler() {
             return tumOzellikler;
         }
@@ -70,5 +79,17 @@ import utilities.MyMethods;
 
         public WebElement getKayitOlSayfasiDogrulama(){
             return kayitOlSayfasiDogrulama;
+        }
+
+        public WebElement getUcretsizEmagazaniAc(){
+            return ucretsizEmagazaniAc;
+        }
+
+        public WebElement getUcretsizFiyatTeklifi(){
+            return ucretsizFiyatTeklifi;
+        }
+
+        public WebElement getUcretsizEmagazaniAcDogrulama(){
+            return ucretsizEmagazaniAcDogrulama;
         }
     }

@@ -67,4 +67,20 @@ public class Argist_ {
         ar.clickMethod(ar.getTeklifYonetimi());
 
     }
+
+    @And("ücretsiz emağazanı aç butonuna tıkla.")
+    public void ücretsizEmağazanıAçButonunaTıkla() {
+        ar.clickMethod(ar.getUcretsizEmagazaniAc());
+    }
+
+    @Then("açılan sayfanın hesap oluşturma sayfası olduğunu kontrol et.")
+    public void açılanSayfanınHesapOluşturmaSayfasıOlduğunuKontrolEt() {
+        Assert.assertTrue(ar.getUcretsizEmagazaniAcDogrulama().isDisplayed());
+
+    }
+
+    @And("ücretsiz fiyat teklifi butonuna tıkla.")
+    public void ücretsizFiyatTeklifiButonunaTıkla() {
+        ar.clickMethod(ar.getUcretsizFiyatTeklifi());
+    }
 }
