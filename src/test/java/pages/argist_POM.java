@@ -19,50 +19,50 @@ import utilities.MyMethods;
         private WebElement satisYonetimiOzelligi;
 
         @FindBy(css = "a[title='Özelliği İncele'][href='https://argist.com/randevu-yonetimi/']")
-        private WebElement email;
+        private WebElement randevuYonetimi;
 
-        @FindBy(xpath ="//input[@id='gigya-password-43351943385770020']")
-        private WebElement sifre;
-        @FindBy(xpath = "//input[@value='Giriş Yap']")
-        private WebElement girisYapButonu;
+        @FindBy(css = "a[title='Özelliği İncele'][href='https://argist.com/teknik-servis-yazilimi/']")
+        private WebElement teknikServisYazilimi;
+        @FindBy(xpath = "(//a[@title='Özelliği İncele'])[4]")
+        private WebElement eMagazaYonetimi;
 
-        @FindBy(xpath = "//span[@data-bound-to='password'][normalize-space()='Bu alan zorunlu']")
-        private WebElement sifreBosBirakilamazHatasi;
+        @FindBy(xpath = "(//a[@title='Özelliği İncele'])[5]")
+        private WebElement stokYonetimi;
 
-        @FindBy(xpath = "//span[@data-bound-to='loginID'][normalize-space()='Bu alan zorunlu']")
-        private WebElement emailBosBirakilamazHatasi;
+        @FindBy(xpath = "(//a[@title='Özelliği İncele'])[6]")
+        private WebElement teklifYonetimi;
 
-        @FindBy(css = "#gigya-profile-form > section.grid-container.gigya-form-wrapper-mobile > div > div:nth-child(4) > div > div > div")
-        private WebElement emailGecersizHatasi;
-        public WebElement getTopluluk() {
-            return topluluk;
+        @FindBy(xpath = "//a[@title='Hemen Kayıt Ol']")
+        private WebElement kayitOlButonu;
+        public WebElement getOzellikler() {
+            return ozellikler;
         }
 
-        public WebElement getRomantikİliskiler() {
-            return romantikİliskiler;
+        public WebElement getSatisYonetimiOzelligi() {
+            return satisYonetimiOzelligi;
         }
 
-        public WebElement getEmail(){
-            return email;
+        public WebElement getRandevuYonetimi(){
+            return randevuYonetimi;
         }
-        public WebElement getSifre(){
-            return sifre;
-        }
-
-        public WebElement getGirisYapButonu(){
-            return girisYapButonu;
+        public WebElement getTeknikServisYazilimi(){
+            return teknikServisYazilimi;
         }
 
-        public WebElement getSifreBosBirakilamazHatasi() {
-            return sifreBosBirakilamazHatasi;
+        public WebElement geteMagazaYonetimi(){
+            return eMagazaYonetimi;
         }
 
-        public WebElement getEmailBosBirakilamazHatasi() {
-            return emailBosBirakilamazHatasi;
+        public WebElement getStokYonetimi() {
+            return stokYonetimi;
         }
 
-        public WebElement getEmailGecersizHatasi(){
-            return emailGecersizHatasi;
+        public WebElement getTeklifYonetimi() {
+            return teklifYonetimi;
+        }
+
+        public WebElement getKayitOlButonu(){
+            return kayitOlButonu;
         }
     }
 }
